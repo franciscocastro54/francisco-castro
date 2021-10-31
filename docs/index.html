@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilos.css">
+	<script src="./js/main.js"></script>
+	<script defer src="js/lazy-loader.js"></script>
+	<script src="js/html2pdf.bundle.min.js"></script>
+	<script src="js/formatoPDF.js"></script>
+	<title>francisco-castro</title>
+</head>
+<body>
+	<div id="particles-js"></div>
+	<div class="hero" id="hero">
+		<img data-lazy="./img/francisco-castro-logo-blue.png" alt="" srcset="">
+		<p>Frontend developer</p>
+	</div>
+
+	<nav id="menu">
+		<a href="#1">Quién soy</a>
+		<a href="#2">Proyectos</a>
+		<a href="#3">Habilidades</a>
+		<a href="#4">Contacto</a>
+		<a href="#5">Curriculum</a>
+		<span class="indicador" id="indicador"></span>
+	</nav>
+
+	<div class="secciones">
+		<div class="seccion" id="1">
+			<div class="card">
+				<h1>Quién soy?</h1>
+				<img data-lazy="img/laptop-img.jpg" alt="">
+				<p>Soy un programador frontend, actualmente me encuentro estudiando la carrera de analista programador ,además de instruirme de manera autodidacta acerca de las nuevas tecnologías y tendencias que surgen en la web, siempre busco nuevos desafíos y grupos de trabajo en los que pueda crecer profesionalmente. </p>
+			</div>
+		</div>
+
+		<div class="seccion" id="2">
+			<div class="card">
+				<h1>Proyectos</h1>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet ante mattis, lacinia arcu nec, consequat massa. Aliquam faucibus quam eget justo posuere vehicula. Donec ac fermentum dolor, rhoncus congue sapien. Maecenas lacinia tellus nec turpis tempor pellentesque. Praesent in erat a nisl viverra dapibus. Pellentesque feugiat dolor quis sapien rutrum, sed placerat est volutpat. Curabitur sed convallis lacus, vel molestie ante. </p>
+			</div>
+		</div>
+
+		<div class="seccion" id="3">
+			<div class="card">
+				<h1>Habilidades</h1>
+				<img src="img/3.jpg" alt="">
+				<p>Amplio conocimiento de metodologías agiles, experiencia dictando clases, . </p>
+			</div>
+		</div>
+
+		<div class="seccion" id="4">
+			<div class="card">
+				<h1>Contacto</h1>
+				<img src="img/4.jpg" alt="">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet ante mattis, lacinia arcu nec, consequat massa. Aliquam faucibus quam eget justo posuere vehicula. Donec ac fermentum dolor, rhoncus congue sapien. Maecenas lacinia tellus nec turpis tempor pellentesque. Praesent in erat a nisl viverra dapibus. Pellentesque feugiat dolor quis sapien rutrum, sed placerat est volutpat. Curabitur sed convallis lacus, vel molestie ante. </p>
+			</div>
+		</div>
+
+		<div  id="5">
+			
+				<button class="boton" id="btnCrearPdf">Descargar pdf</button>
+			
+			
+			<section>
+		
+				<article id="cv">
+						<header class="encabezado1">
+							<text class="titulo1" id="nombre">Francisco Jesús Castro Zuleta</text>
+							<text class="titulo2" id="formacion">Cursando penúltimo semestre de Analista Programador</text>
+							<text class="titulo2" id="institucion">Inacap Renca, Bravo de Saravia 2980  </text>
+							<text class="titulo2" id="fechaFormacion">mar 2020 - presente</text>
+						</header>
+				
+						<div class="grid-tema1" id="datosPersonales">
+							<h4 class="section" >Datos personales</h4>
+							
+							<div class="grid-content1">
+				
+								<div class="name">Nombre</div>
+								<div >Francisco Jesús Castro Zuleta</div>
+								
+								<div class="name">RUT</div>
+								<div id="rut">18.928.841-7</div>
+				
+								<div class="name">Correo electrónico</div>
+								<div id="mail">francisco.castro.init@gmail.com</div>
+								
+								<div class="name">Teléfono</div>
+								<div id="telefono">+569 35232158</div>
+								
+								<div class="name">Fecha de nacimiento</div>
+								<div id="fechaNacimiento">5 de septiembre de 1993</div>
+								
+								<div class="name">Género</div>
+								<div id="genero">Hombre</div>
+								
+								<div class="name">Nacionalidad</div>
+								<div id="nacionalidad">Chilena</div>
+								
+								<div class="name">Estado civil</div>
+								<div id="estadoCivil">Soltero</div>
+								
+								
+								
+				
+							</div>
+						</div>
+		
+				
+				
+						<div class="grid-tema1" id="Competencias">
+							<h4 class="section" >Competencias</h4>
+							
+							<div class="grid-content1">
+				
+								
+								<div class="name" >Java</div>
+								<div class="medio">
+									<div class="fill-box"></div>
+									<div></div>
+								</div>
+				
+								<div class="name">Javascript</div>
+								<div class="alto">
+									<div class="fill-box"></div>
+									<div></div>
+								</div>
+								
+								<div class="name">React</div>
+								<div class="medio">
+									<div class="fill-box"></div>
+									<div ></div>
+								</div>
+				
+								<div class="name">Bootstrap 5</div>
+								<div class="alto">
+									<div class="fill-box"></div>
+									<div></div>
+								</div>
+				
+								<div class="name">css</div>
+								<div class="alto">
+									<div class="fill-box"></div>
+									<div></div>
+								</div>
+				
+								<div class="name">Oracle Database</div>
+								<div class="medio">
+									<div class="fill-box"></div>
+									<div ></div>
+								</div>
+				
+								<div class="name">Git</div>
+								<div class="alto">
+									<div class="fill-box"></div>
+									<div></div>
+								</div>
+				
+								<div class="name">html 5</div>
+								<div class="full">
+									<div class="fill-box"></div>
+									<div></div>
+								</div>
+				
+								<div class="name">MySQL</div>
+								<div class="medio">
+									<div class="fill-box"></div>
+									<div ></div>
+								</div>
+				
+								<div class="name">Visual Studio Code</div>
+								<div class="full">
+									<div class="fill-box"></div>
+									<div></div>
+								</div>
+				
+								<div class="name">Python</div>
+								<div class="bajo">
+									<div class="fill-box"></div>
+									<div ></div>
+								</div>
+								
+								<div class="name">NetBeans</div>
+								<div class="medio">
+									<div class="fill-box"></div>
+									<div ></div>
+								</div>
+				
+							</div>
+						</div>
+						
+						<div class="grid-tema1" id="idiomas">
+							<h4 class="section">Idiomas</h4>
+							
+							<div class="grid-content1">
+				
+								<div class="name">Ingles</div>
+								<div class="alto">
+									<div class="fill-box"></div>
+									<div ></div>
+								</div>
+				 
+							</div>
+						</div>
+				
+						<div class="grid-tema1" id="aptitudes">
+							<h4 class="section">Aptitudes</h4>
+							
+							<div class="parrafo1">
+							  
+								<div>Excelente comunicación y  trabajo en equipo, además de disposición para aprender nuevas tecnologías, tolerancia a la frustración y constante estudio autodidacta de nuevas soluciones tecnologicas. </div>
+								
+							</div>
+						</div>
+				
+						<div class="grid-tema1" id="datosPersonales">
+							<h4 class="section" >Antecedentes</h4>
+							
+							<div class="grid-content2">
+				
+								<div class="name">2012</div>
+								<div >Egreso colegio cientifíco-humanista Saint Rose School</div>
+								
+								<div class="name">2015 - 2016</div>
+								<div id="rut">Estudio Pedagogía en matemáticas, Universidad Metropolitana de ciencias de la educación</div>
+				
+								<div class="name">2017 - 2018</div>
+								<div id="mail">Operario supermercado Montserrat Pirque, sector fiambrería (atención a público) </div>
+								
+								<div class="name">2019</div>
+								<div id="telefono">Operario part-time sector bodega, La Polar Huechuraba</div>
+								
+								<div class="name">2016 - actualidad</div>
+								<div id="telefono">Clases particulares (matemática y programación)</div>
+
+								<div class="name">2020 - actualidad</div>
+								<div id="telefono">Arreglo de computadores de forma independiente</div>
+
+								<div class="name">2020 - actualidad</div>
+								<div id="telefono">Estudiante Analista Programador, Inacap Renca</div>
+								
+								
+				
+							</div>
+						</div>
+				
+						<div class="grid-tema1" id="referencias">
+							<h4 class="section">Referencias</h4>
+							
+							<div class="grid-content1">
+				
+								
+								<div class="name">Javier Ignacio Miles Avello</div>
+								<div>+569 89005258</div>
+				
+								<div class="name">Correo electrónico</div>
+								<div>javier.miles@inacapmail.cl</div>
+				
+								<div class="name"> Dirección </div>
+								<div>Inacap Renca, Bravo de Saravia 2980</div>
+				
+								
+								
+							</div>
+						</div>
+				
+						<div class="grid-tema1" id="portafolio">
+							<h4 class="section">Portafolio</h4>
+							
+							<div class="grid-content1">
+				
+								
+								<div class="name">Sistema de análisis de datos de mineria</div>
+								<div class="grid-link">
+									<a href="https://gh-pages.d1ttcus0droxpy.amplifyapp.com/Circuito_Unitario">Proyecto mineria</a> 
+									<img class="qr" data-lazy="./img/qrMineria.png" alt="mineral proyect"/>
+								</div>
+								
+				
+								<div class="name">Tecnologías usadas en diseño</div>
+								<div class="parrafo2">html, Bootstrap 5, Javascript, React,  css y github</div>
+				
+								
+								<div class="name">Curriculum</div>
+								<div class="grid-link">
+								
+									<a href="https://franciscocastro54.github.io/cvProyect/">Curriculum online</a> 
+									<img class="qr" data-lazy="./img/qrCV.png" alt="curriculum"/>
+								
+								</div>
+				
+				
+								<div class="name">Código</div>
+								<div><a href="https://github.com/franciscocastro54/cvProyect">código fuente de curriculum</a></div>
+				
+								<div class="name">Tecnologías usadas en diseño</div>
+								<div class="parrafo2">html, css y github</div>
+							</div>
+						</div>
+				
+						<div class="grid-tema1" id="Pasatiempos">
+							<h4 class="section">Pasatiempos e intereses</h4>
+							
+							<div class="grid-content1">
+				
+								
+								<div class="name">Desarrollo de videojuegos</div>
+								<div></div>
+				
+								<div class="name">Practicar Taekwondo</div>
+								<div></div>
+				
+								<div class="name">Investigación autodidacta</div>
+								<div></div>
+								
+							</div>
+						</div>
+				
+					</div>
+				</article>
+			</section>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+	<script src="js/particles.min.js"></script>
+    <script src="js/background.js"></script>
+</body>
+</html>
