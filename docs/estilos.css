@@ -213,7 +213,7 @@ nav .indicador {
 /* cv */
 
 .cv{
-	z-index: 150;
+	z-index: -1;
 }
 
 .header1 {
@@ -414,6 +414,9 @@ footer > .name2{
 }
 
 .boton{
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
     background-color: var(--color1);
 	color: var(--color5);
 	width: 20rem;
