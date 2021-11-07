@@ -1,6 +1,7 @@
 :root{
     --background-color1: white;
 	--background-color2: rgba(36, 35, 35, 0.556);
+    --background-color3: rgba(134, 218, 214, 0.2);
     --text-color1: #008bff;
 	/* --text-color2: rgba(255, 255, 255, 0.83); */
     --shadow-color: #302f2f;
@@ -69,13 +70,10 @@ a {
 }
 
 .hero img {
-	width: 50vh;
+	width: 35vh;
+    transform: translateZ(100px) translateX(0) translateY(-10px);
 }
 
-.hero p {
-	font-size: 1.5rem;
-	color: var(--color1);
-}
 
 nav {
 	background: var(--color5);
@@ -138,13 +136,20 @@ nav .indicador {
 	padding: 40px;
 	border-radius: 2px;
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
 }
 
-.seccion h1 {
-	font-size: 48px;
-	margin-bottom: 20px;
+.card h1{
+    font-size: 48px;
+	margin-bottom: 0;
 	color: var(--text-color1);
 }
+
+#quiensoy h1 {
+    transform: translateZ(120px) translateX(33%) translateY(0);
+}
+
+
 
 .seccion p {
 	line-height: 38px;
@@ -153,16 +158,24 @@ nav .indicador {
 	font-size: 20px;
 }
 
+.card{
+    transform-style: preserve-3d;
+}
+
 .card > img {
-	width: 100%;
+    align-self: center;
+
+	max-width: 40%;
 	vertical-align: top;
 	margin-bottom: 20px;
+    transform: translateZ(100px) translateX(80%) translateY(-10px);
 }
 
 .seccion ul{
     display: grid;
     grid-template-columns: 30% 30% 30%;
     text-align: center;
+    transform: translateZ(110px) translateX(30px) translateY(-10px);
 }
 
 .seccion ul h3{
@@ -179,12 +192,30 @@ nav .indicador {
     overflow: hidden;
     margin-left: 4rem;
     padding: 1rem 1rem 1rem 0.5rem ;
+    
 }
 
-.seccion ul li .logo-container img{
-    width: 80px;
-
+.seccion ul #html5 .logo-container img,
+.seccion ul #bootstrap .logo-container img,
+.seccion ul #css .logo-container img,
+.seccion ul #java .logo-container img
+{
+    height: 80px;
 }
+
+.seccion ul #javascript .logo-container img,
+.seccion ul #npm .logo-container img,
+.seccion ul #nodejs .logo-container img,
+.seccion ul #react .logo-container img
+{
+    height: 65px;
+}
+
+.seccion ul #github .logo-container img{
+    height: 65px;
+    margin-left: 0.5rem;
+}
+
 
 @media screen and (max-width: 800px) {
 	nav a {
@@ -363,7 +394,7 @@ article{
     background-color: var(--text-color4);
     margin: -40px 0 0 0;
     font-size: var(--font-size1);
-    width: 1277pxpx;
+    width: 1277px;
 }
 
 .parrafo2{
@@ -400,10 +431,148 @@ footer{
     padding: 0px 20px 20px 0;
 }
 
-.logo{
-    width: 35px;
-    height: 35px;
-}
+a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .logo {
+    display: block;
+
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+
+    line-height: 500px;
+    text-align: center;
+
+    color: white;
+    font-size: 2em;
+
+    background: #103e5a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(135deg, #103e5a, transparent); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(135deg, var(--background-color3), transparent ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: perspective(500px);
+    transform: perspective(500px);
+    margin-bottom: 75px;
+  }
+
+
+  /* .logo a img:before{
+      position: absolute;
+        content: 'Desarrollador frontend';
+        transform: translateZ(110px) translateX(0) translateY(100px);
+  } */
+
+  .logo p{
+    content: "Programador Frontend";
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    top: 36px;
+    left: 33%;
+    transform: translateX(-25%);
+
+    transition: 0.3s ease all;
+
+    -webkit-transform: translateZ(50px) scale(0.7);
+    transform: translateZ(50px) scale(0.7);
+  }
+
+  .logo #sub-1{
+      opacity: 0.8;
+  }
+
+  .logo #sub-2{
+      opacity: 0;
+  }
+
+  .logo:hover #sub-1{
+    opacity: 0;
+  }
+
+  .logo:hover #sub-2{
+    opacity: 0.8;
+    left: 30%;
+  }
+
+  
+  /* .logo > span {
+    position: relative;
+    display: block;
+    -webkit-transform: translateZ(50px) scale(0.7);
+    transform: translateZ(100px) scale(0.7);
+  } */
+
+  /* .logo > img:after {
+    content: "Programador Frontend";
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    top: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    opacity: 0.8;
+
+    transition: 0.3s ease all;
+
+    -webkit-transform: translateZ(50px) scale(0.7);
+    transform: translateZ(100px) scale(0.7);
+  }
+
+  .logo > span:before {
+    content: "Estudiante analista programador";
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    top: 36px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+
+    opacity: 0;
+
+    display: inline-block;
+    width: 100%;
+
+    transition: 0.3s ease all;
+  }
+
+  .logo:hover > span:after {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+
+  .logo:hover > span:before {
+    opacity: 0.8;
+    transform: translateX(-50%);
+  }
+
+  .logo > span > span {
+    display: block;
+    font-size: 12px;
+  } */
+
+  .logo:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(img/laptop-img.jpg);
+    background-size: cover;
+    background-position: left;
+    box-shadow: 0 20px 70px -10px rgba(51, 51, 51, 0.7), 0 50px 100px 0 rgba(51, 51, 51, 0.2);
+    z-index: -1;
+    -webkit-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
 
 footer > .grid-col-2{
     padding: 40px 0 0 0 ;
