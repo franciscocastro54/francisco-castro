@@ -37,6 +37,7 @@ html {
 body {
 	background: var(--color5);
 	font-family: monospace;
+
 }
 
 ul{
@@ -136,18 +137,22 @@ nav .indicador {
 	padding: 40px;
 	border-radius: 2px;
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    overflow: hidden;
+    align-items: center;
     
 }
 
-.card h1{
+.card > h1{
+    position: absolute;
     font-size: 48px;
 	margin-bottom: 0;
-	color: var(--text-color1);
+    left: 33.33%;
+	color: var(--color5);
 }
 
-#quiensoy h1 {
+/* #quiensoy h1 {
     transform: translateZ(120px) translateX(33%) translateY(0);
-}
+} */
 
 
 
@@ -167,7 +172,8 @@ nav .indicador {
 
 	max-width: 40%;
 	vertical-align: top;
-	margin-bottom: 20px;
+    margin-top: 10rem;
+	margin-bottom: 2rem;
     transform: translateZ(100px) translateX(80%) translateY(-10px);
 }
 
@@ -204,7 +210,6 @@ nav .indicador {
 }
 
 .seccion ul #javascript .logo-container img,
-.seccion ul #npm .logo-container img,
 .seccion ul #nodejs .logo-container img,
 .seccion ul #react .logo-container img
 {
@@ -216,6 +221,11 @@ nav .indicador {
     margin-left: 0.5rem;
 }
 
+.seccion ul #npm .logo-container img{
+    margin-left: -2px;
+    margin-top: 10px;
+    height: 50px;
+}
 
 @media screen and (max-width: 800px) {
 	nav a {
@@ -394,7 +404,7 @@ article{
     background-color: var(--text-color4);
     margin: -40px 0 0 0;
     font-size: var(--font-size1);
-    width: 1277px;
+    width: 100%;
 }
 
 .parrafo2{
@@ -595,4 +605,88 @@ footer > .name2{
 	cursor: pointer;
 	border: none;
 	margin-bottom: 2rem;
+}
+
+/* 
+.custom-shape-divider-top-1636518186 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1636518186 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 112px;
+}
+
+.custom-shape-divider-top-1636518186 .shape-fill {
+    fill: #FFFFFF;
+}
+*/
+
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1636518186 svg {
+        width: calc(300% + 1.3px);
+        height: 72px;
+    }
+}
+
+
+
+
+.spacer {
+    aspect-ratio: 960/(300);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url(img/svg/blob-haikei.svg);
+}
+
+.layer2 {
+    background-image: url(img/svg/blob-haikei\ \(1\).svg);
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
+#visual{
+    margin-left: -29rem;
+    width: 200%;
+    height: 900px;
+    margin-top: -6rem;
+    position: absolute;
+}
+
+.seccion#contacto{
+    height: 50rem;
+}
+
+.seccion#contacto .card > h1{
+    z-index: 50;
+    position: absolute;
+    color: white;
+}
+
+.card .contact-icon{
+    top: 12rem;
+    margin-right: 8rem;
+    position: relative;
+}
+
+.card > img.contact-img{
+    margin: 18rem 0 -115px -96%;
+    max-width: 112%;
+    width: 112%;
 }
