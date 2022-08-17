@@ -1,549 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="estilos.css">
-	<script src="./js/main.js"></script>
-	<script defer src="js/lazy-loader.js"></script>
-	<script src="js/html2pdf.bundle.min.js"></script>
-	<script src="js/formatoPDF.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
-	<title>francisco-castro</title>
-</head>
-
-<body>
-	<div id="particles-js"></div>
-	
-
-
-	<div class="hero" id="hero">
-
-
-		<a href="#" class="logo" id="logo" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.5"
-			data-tilt-speed="400" data-tilt-scale="1.1" data-tilt-perspective="500" data-tilt-max="10"
-			data-tilt-scale="1.1">
-			<img data-lazy="./img/francisco-castro-logo-white.png" alt="" srcset="">
-			<p id="sub-1">Desarrollador frontend</p>
-			<p id="sub-2">Estudiante analista programador</p>
-		</a>
-	</div>
-
-	<nav id="menu">
-		<a href="#quiensoy">Quién soy</a>
-		<a href="#proyectos">Proyectos</a>
-		<a href="#habilidades">Habilidades</a>
-		<a href="#contacto">Contacto</a>
-		<a href="#curriculum">Curriculum</a>
-		<span class="indicador" id="indicador"></span>
-	</nav>
-
-	<div class="secciones">
-		<div class="seccion" id="quiensoy">
-			
-			<div class="card" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.5" data-tilt-speed="400"
-				data-tilt-scale="1.1" data-tilt-perspective="500" data-tilt-max="2" data-tilt-scale="1.1">
-				<svg id="visual" viewBox="0 0 900 750" width="900" height="750" xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-					<g>
-						<path id="blob1"
-							d="M0 211L21.5 192.3C43 173.7 86 136.3 128.8 124.5C171.7 112.7 214.3 126.3 257.2 142.2C300 158 343 176 385.8 177.3C428.7 178.7 471.3 163.3 514.2 149.3C557 135.3 600 122.7 642.8 120.7C685.7 118.7 728.3 127.3 771.2 143.2C814 159 857 182 878.5 193.5L900 205L900 0L878.5 0C857 0 814 0 771.2 0C728.3 0 685.7 0 642.8 0C600 0 557 0 514.2 0C471.3 0 428.7 0 385.8 0C343 0 300 0 257.2 0C214.3 0 171.7 0 128.8 0C86 0 43 0 21.5 0L0 0Z"
-							fill="#0066FF" stroke-linecap="square" stroke-linejoin="bevel"></path>
-					</g>
-
-					<g style="visibility: hidden;">
-						<path id="blob2" 
-							d="M0 180L21.5 171.2C43 162.3 86 144.7 128.8 137.8C171.7 131 214.3 135 257.2 147C300 159 343 179 385.8 187.8C428.7 196.7 471.3 194.3 514.2 181.8C557 169.3 600 146.7 642.8 139C685.7 131.3 728.3 138.7 771.2 141C814 143.3 857 140.7 878.5 139.3L900 138L900 0L878.5 0C857 0 814 0 771.2 0C728.3 0 685.7 0 642.8 0C600 0 557 0 514.2 0C471.3 0 428.7 0 385.8 0C343 0 300 0 257.2 0C214.3 0 171.7 0 128.8 0C86 0 43 0 21.5 0L0 0Z"
-							fill="#0066FF" stroke-linecap="square" stroke-linejoin="bevel"></path>
-					</g>
-				</svg>
-				<h1>Quién soy?</h1>
-				<img id="laptop-photo" data-lazy="img/rocks.jpg" alt="">
-				<p>Soy un programador frontend, actualmente me encuentro estudiando la carrera de analista programador
-					,además de instruirme de manera autodidacta acerca de las nuevas tecnologías y tendencias que surgen
-					en la web, siempre busco nuevos desafíos y grupos de trabajo en los que pueda crecer
-					profesionalmente. </p>
-			</div>
-		</div>
-
-		<div class="seccion" id="proyectos">
-			
-			<div class="card" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.5" data-tilt-speed="400"
-				data-tilt-scale="1.1" data-tilt-perspective="500" data-tilt-max="2" data-tilt-scale="1.1">
-				<svg id="visual" viewBox="0 0 900 750" width="900" height="750" xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-					<g>
-						<path id="blob3"
-							d="M0 211L21.5 192.3C43 173.7 86 136.3 128.8 124.5C171.7 112.7 214.3 126.3 257.2 142.2C300 158 343 176 385.8 177.3C428.7 178.7 471.3 163.3 514.2 149.3C557 135.3 600 122.7 642.8 120.7C685.7 118.7 728.3 127.3 771.2 143.2C814 159 857 182 878.5 193.5L900 205L900 0L878.5 0C857 0 814 0 771.2 0C728.3 0 685.7 0 642.8 0C600 0 557 0 514.2 0C471.3 0 428.7 0 385.8 0C343 0 300 0 257.2 0C214.3 0 171.7 0 128.8 0C86 0 43 0 21.5 0L0 0Z"
-							fill="#0066FF" stroke-linecap="square" stroke-linejoin="bevel"></path>
-					</g>
-
-					<g style="visibility: hidden;">
-						<path id="blob4" 
-							d="M0 180L21.5 171.2C43 162.3 86 144.7 128.8 137.8C171.7 131 214.3 135 257.2 147C300 159 343 179 385.8 187.8C428.7 196.7 471.3 194.3 514.2 181.8C557 169.3 600 146.7 642.8 139C685.7 131.3 728.3 138.7 771.2 141C814 143.3 857 140.7 878.5 139.3L900 138L900 0L878.5 0C857 0 814 0 771.2 0C728.3 0 685.7 0 642.8 0C600 0 557 0 514.2 0C471.3 0 428.7 0 385.8 0C343 0 300 0 257.2 0C214.3 0 171.7 0 128.8 0C86 0 43 0 21.5 0L0 0Z"
-							fill="#0066FF" stroke-linecap="square" stroke-linejoin="bevel"></path>
-					</g>
-				</svg>
-				<h1>Proyectos</h1>
-				<img id="laptop-photo" data-lazy="img/rocks.jpg" alt="">
-				<p>Soy un programador frontend, actualmente me encuentro estudiando la carrera de analista programador
-					,además de instruirme de manera autodidacta acerca de las nuevas tecnologías y tendencias que surgen
-					en la web, siempre busco nuevos desafíos y grupos de trabajo en los que pueda crecer
-					profesionalmente. </p>
-			</div>
-		</div>
-
-		<div class="seccion" id="habilidades">
-			<div class="card" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.5" data-tilt-speed="400"
-				data-tilt-scale="1.1" data-tilt-perspective="500" data-tilt-max="2" data-tilt-scale="1.1">
-				
-				<svg id="visual" viewBox="0 0 900 750" width="900" height="750" xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-					<g>
-						<path id="blob5"
-							d="M0 211L21.5 192.3C43 173.7 86 136.3 128.8 124.5C171.7 112.7 214.3 126.3 257.2 142.2C300 158 343 176 385.8 177.3C428.7 178.7 471.3 163.3 514.2 149.3C557 135.3 600 122.7 642.8 120.7C685.7 118.7 728.3 127.3 771.2 143.2C814 159 857 182 878.5 193.5L900 205L900 0L878.5 0C857 0 814 0 771.2 0C728.3 0 685.7 0 642.8 0C600 0 557 0 514.2 0C471.3 0 428.7 0 385.8 0C343 0 300 0 257.2 0C214.3 0 171.7 0 128.8 0C86 0 43 0 21.5 0L0 0Z"
-							fill="#0066FF" stroke-linecap="square" stroke-linejoin="bevel"></path>
-					</g>
-
-					<g style="visibility: hidden;">
-						<path id="blob6" 
-							d="M0 180L21.5 171.2C43 162.3 86 144.7 128.8 137.8C171.7 131 214.3 135 257.2 147C300 159 343 179 385.8 187.8C428.7 196.7 471.3 194.3 514.2 181.8C557 169.3 600 146.7 642.8 139C685.7 131.3 728.3 138.7 771.2 141C814 143.3 857 140.7 878.5 139.3L900 138L900 0L878.5 0C857 0 814 0 771.2 0C728.3 0 685.7 0 642.8 0C600 0 557 0 514.2 0C471.3 0 428.7 0 385.8 0C343 0 300 0 257.2 0C214.3 0 171.7 0 128.8 0C86 0 43 0 21.5 0L0 0Z"
-							fill="#0066FF" stroke-linecap="square" stroke-linejoin="bevel"></path>
-					</g>
-				</svg>
-				
-				<h1>Habilidades</h1>
-				<img id="laptop-photo" data-lazy="img/mountain-blue.png" alt="">
-				<p>Amplio conocimiento de metodologías agiles, experiencia dictando clases, disposición a recibir
-					criticas constructivas así como a aportar con nuevas ideas orientadas en la optimización del
-					trabajo. A continuación se listaran la serie de tecnologías que domino. </p>
-
-				<ul>
-					<li id="html5">
-						<h3>HTML5</h3>
-						<div class="logo-container">
-							<img data-lazy="img/logos/html-logo.png" alt="" srcset="">
-						</div>
-					</li>
-
-					<li id="javascript">
-						<h3>javaScript</h3>
-						<div class="logo-container">
-							<img data-lazy="img/logos/javascript-logo.png" alt="" srcset="">
-						</div>
-					</li>
-
-					<li id="css">
-						<h3>css</h3>
-						<div class="logo-container">
-							<img data-lazy="img/logos/css-logo.png" alt="" srcset="">
-						</div>
-					</li>
-
-					<li id="bootstrap">
-						<h3>Bootstrap</h3>
-						<div class="logo-container">
-							<img data-lazy="img/logos/bootstrap-logo.png" alt="" srcset="">
-						</div>
-					</li>
-
-					<li id="github">
-						<h3>Github</h3>
-						<div class="logo-container">
-							<img data-lazy="img/logos/github.png" alt="" srcset="">
-						</div>
-					</li>
-
-					<li id="java">
-						<h3>Java</h3>
-						<div class="logo-container">
-							<img data-lazy="img/logos/java-logo.png" alt="" srcset="">
-						</div>
-					</li>
-
-					<li id="nodejs">
-						<h3>NodeJS</h3>
-						<div class="logo-container">
-							<img data-lazy="img/logos/node-logo.png" alt="" srcset="">
-						</div>
-					</li>
-
-					<li id="npm">
-						<h3>npm</h3>
-						<div class="logo-container">
-							<img data-lazy="img/logos/npm-logo.png" alt="" srcset="">
-						</div>
-					</li>
-
-					<li id="react">
-						<h3>react</h3>
-						<div class="logo-container">
-							<img data-lazy="img/logos/react-logo.png" alt="" srcset="">
-						</div>
-					</li>
-				</ul>
-
-			</div>
-		</div>
-
-		<div class="seccion" id="contacto" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.5" data-tilt-speed="400"
-		data-tilt-scale="1.1" data-tilt-perspective="500" data-tilt-max="2" data-tilt-scale="1.1">
-			<div class="card">
-				
-				<h1>Contacto</h1>
-				<img class="contact-img" data-lazy="img/mountain-blue.png" alt="">
-				<svg id="visual" viewBox="0 0 900 750" width="900" height="750" xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-						<g>
-							<path id="blob7"
-								d="M0 211L21.5 192.3C43 173.7 86 136.3 128.8 124.5C171.7 112.7 214.3 126.3 257.2 142.2C300 158 343 176 385.8 177.3C428.7 178.7 471.3 163.3 514.2 149.3C557 135.3 600 122.7 642.8 120.7C685.7 118.7 728.3 127.3 771.2 143.2C814 159 857 182 878.5 193.5L900 205L900 0L878.5 0C857 0 814 0 771.2 0C728.3 0 685.7 0 642.8 0C600 0 557 0 514.2 0C471.3 0 428.7 0 385.8 0C343 0 300 0 257.2 0C214.3 0 171.7 0 128.8 0C86 0 43 0 21.5 0L0 0Z"
-								fill="#0066FF" stroke-linecap="square" stroke-linejoin="bevel"></path>
-						</g>
-
-						<g style="visibility: hidden;">
-							<path id="blob8" 
-								d="M0 180L21.5 171.2C43 162.3 86 144.7 128.8 137.8C171.7 131 214.3 135 257.2 147C300 159 343 179 385.8 187.8C428.7 196.7 471.3 194.3 514.2 181.8C557 169.3 600 146.7 642.8 139C685.7 131.3 728.3 138.7 771.2 141C814 143.3 857 140.7 878.5 139.3L900 138L900 0L878.5 0C857 0 814 0 771.2 0C728.3 0 685.7 0 642.8 0C600 0 557 0 514.2 0C471.3 0 428.7 0 385.8 0C343 0 300 0 257.2 0C214.3 0 171.7 0 128.8 0C86 0 43 0 21.5 0L0 0Z"
-								fill="#0066FF" stroke-linecap="square" stroke-linejoin="bevel"></path>
-						</g>
-				</svg>
-
-
-				<a class="contact-icon" href="https://www.linkedin.com/in/francisco-castro-311180220/"
-					title="https://www.linkedin.com/in/francisco-castro-311180220/"><svg
-						xmlns="http://www.w3.org/2000/svg" width="5rem" height="5rem" viewBox="0 0 24 24" fill="none"
-						stroke="#008bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-						class="feather feather-linkedin">
-						<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-						<rect x="2" y="9" width="4" height="12"></rect>
-						<circle cx="4" cy="4" r="2"></circle>
-				</svg></a>
-
-				<a class="contact-icon" href="mailto:francisco.castro.init@gmail.com" title="francisco.castro.init@gmail.com"><svg
-						xmlns="http://www.w3.org/2000/svg" width="5rem" height="5rem" viewBox="0 0 24 24" fill="none"
-						stroke="#008bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-						class="feather feather-mail">
-						<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-						<polyline points="22,6 12,13 2,6"></polyline>
-					</svg></a>
-				
-				<a class="contact-icon" href="https://github.com/franciscocastro54" title="https://github.com/franciscocastro54"><svg
-						xmlns="http://www.w3.org/2000/svg" width="5rem" height="5rem" viewBox="0 0 24 24" fill="none"
-						stroke="#008bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-						class="feather feather-github">
-						<path
-							d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-						</path>
-				</svg></a>
-
-			</div>
-
-		</div>
-
-		<div class="seccion" id="curriculum">
-
-			<a class="boton" href="pdf/francisco-castro-cv.pdf" download="francisco-castro-cv">Descargar curriculum</a>
-
-
-			<section>
-				<!-- <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-
-					<g transform="translate(439.2593679210362 329.86577213166055)">
-						<path id="blob1"
-							d="M127.1 -141.7C158.9 -95.2 174.9 -47.6 186.5 11.5C198 70.7 205.1 141.4 173.3 170.1C141.4 198.8 70.7 185.4 17.7 167.7C-35.4 150 -70.7 128 -95.9 99.4C-121 70.7 -136 35.4 -152.6 -16.6C-169.3 -68.6 -187.5 -137.2 -162.3 -183.7C-137.2 -230.2 -68.6 -254.6 -10.5 -244.1C47.6 -233.6 95.2 -188.2 127.1 -141.7"
-							fill="#BB004B"></path>
-					</g>
-
-					<g transform="translate(410.82382001798607 322.15039513839235)" style="visibility: hidden;">
-						<path id="blob2"
-							d="M148.5 -144.2C198.5 -98.5 249.3 -49.3 254 4.7C258.7 58.7 217.4 117.4 167.4 147.7C117.4 178 58.7 180 -5.3 185.3C-69.3 190.6 -138.6 199.3 -163.6 168.9C-188.6 138.6 -169.3 69.3 -162.1 7.2C-154.9 -54.9 -159.8 -109.8 -134.8 -155.5C-109.8 -201.2 -54.9 -237.6 -2.8 -234.8C49.3 -231.9 98.5 -189.9 148.5 -144.2"
-							fill="#BB004B"></path>
-					</g>
-				</svg> -->
-
-				
-
-
-
-
-				<article class="cv" id="cv">
-
-					<div class="encabezado1">
-						<text class="titulo1" id="nombre">Francisco Jesús Castro Zuleta</text>
-						<text class="titulo2" id="formacion">Cursando penúltimo semestre de Analista Programador</text>
-						<text class="titulo2" id="institucion">Inacap Renca, Bravo de Saravia 2980 </text>
-						<text class="titulo2" id="fechaFormacion">mar 2020 - presente</text>
-					</div>
-
-					<div class="grid-tema1" id="datosPersonales">
-						<h4 class="section">Datos personales</h4>
-
-						<div class="grid-content1">
-
-							<div class="name">Nombre</div>
-							<div>Francisco Jesús Castro Zuleta</div>
-
-							<div class="name">RUT</div>
-							<div id="rut">18.928.841-7</div>
-
-							<div class="name">Correo electrónico</div>
-							<div id="mail">francisco.castro.init@gmail.com</div>
-
-							<div class="name">Teléfono</div>
-							<div id="telefono">+569 35232158</div>
-
-							<div class="name">Fecha de nacimiento</div>
-							<div id="fechaNacimiento">5 de septiembre de 1993</div>
-
-							<div class="name">Género</div>
-							<div id="genero">Hombre</div>
-
-							<div class="name">Nacionalidad</div>
-							<div id="nacionalidad">Chilena</div>
-
-							<div class="name">Estado civil</div>
-							<div id="estadoCivil">Soltero</div>
-
-
-
-
-						</div>
-					</div>
-
-
-
-					<div class="grid-tema1" id="Competencias">
-						<h4 class="section">Competencias</h4>
-
-						<div class="grid-content1">
-
-
-							<div class="name">Java</div>
-							<div class="medio">
-								<div class="fill-box"></div>
-								<div></div>
-							</div>
-
-							<div class="name">Javascript</div>
-							<div class="alto">
-								<div class="fill-box"></div>
-								<div></div>
-							</div>
-
-							<div class="name">React</div>
-							<div class="medio">
-								<div class="fill-box"></div>
-								<div></div>
-							</div>
-
-							<div class="name">Bootstrap 5</div>
-							<div class="alto">
-								<div class="fill-box"></div>
-								<div></div>
-							</div>
-
-							<div class="name">css</div>
-							<div class="alto">
-								<div class="fill-box"></div>
-								<div></div>
-							</div>
-
-							<div class="name">Oracle Database</div>
-							<div class="medio">
-								<div class="fill-box"></div>
-								<div></div>
-							</div>
-
-							<div class="name">Git</div>
-							<div class="alto">
-								<div class="fill-box"></div>
-								<div></div>
-							</div>
-
-							<div class="name">html 5</div>
-							<div class="full">
-								<div class="fill-box"></div>
-								<div></div>
-							</div>
-
-							<div class="name">MySQL</div>
-							<div class="medio">
-								<div class="fill-box"></div>
-								<div></div>
-							</div>
-
-							<div class="name">Visual Studio Code</div>
-							<div class="full">
-								<div class="fill-box"></div>
-								<div></div>
-							</div>
-
-							<div class="name">Python</div>
-							<div class="bajo">
-								<div class="fill-box"></div>
-								<div></div>
-							</div>
-
-							<div class="name">NetBeans</div>
-							<div class="medio">
-								<div class="fill-box"></div>
-								<div></div>
-							</div>
-
-						</div>
-					</div>
-
-					<div class="grid-tema1" id="idiomas">
-						<h4 class="section">Idiomas</h4>
-
-						<div class="grid-content1">
-
-							<div class="name">Ingles</div>
-							<div class="alto">
-								<div class="fill-box"></div>
-								<div></div>
-							</div>
-
-						</div>
-					</div>
-
-					<div class="grid-tema1" id="aptitudes">
-						<h4 class="section">Aptitudes</h4>
-
-						<div class="parrafo1">
-
-							<div>Soy un programador frontend, actualmente me encuentro estudiando la carrera de analista
-								programador , cuento con experiencia arreglando computadores de escritorio y laptops,
-								tengo el habito de estudiar de manera autodidacta acerca de las nuevas tecnologías y
-								tendencias que surgen en la web, siempre busco nuevos desafíos y grupos de trabajo en
-								los que pueda crecer profesionalmente. </div>
-
-						</div>
-					</div>
-
-					<div class="grid-tema1" id="datosPersonales">
-						<h4 class="section">Antecedentes</h4>
-
-						<div class="grid-content2">
-
-							<div class="name">2012</div>
-							<div>Egreso colegio cientifíco-humanista Saint Rose School</div>
-
-							<div class="name">2015 - 2016</div>
-							<div id="rut">Estudio Pedagogía en matemáticas, Universidad Metropolitana de ciencias de la
-								educación</div>
-
-							<div class="name">2017 - 2018</div>
-							<div id="mail">Operario supermercado Montserrat Pirque, sector fiambrería (atención a
-								público) </div>
-
-							<div class="name">2019</div>
-							<div id="telefono">Operario part-time sector bodega, La Polar Huechuraba</div>
-
-							<div class="name">2016 - actualidad</div>
-							<div id="telefono">Clases particulares (matemática y programación)</div>
-
-							<div class="name">2020 - actualidad</div>
-							<div id="telefono">Arreglo de computadores de forma independiente</div>
-
-							<div class="name">2020 - actualidad</div>
-							<div id="telefono">Estudiante Analista Programador, Inacap Renca</div>
-
-
-
-						</div>
-					</div>
-
-					<div class="grid-tema1" id="referencias">
-						<h4 class="section">Referencias</h4>
-
-						<div class="grid-content1">
-
-
-							<div class="name">Javier Ignacio Miles Avello</div>
-							<div>+569 89005258</div>
-
-							<div class="name">Correo electrónico</div>
-							<div>javier.miles@inacapmail.cl</div>
-
-							<div class="name"> Dirección </div>
-							<div>Inacap Renca, Bravo de Saravia 2980</div>
-
-
-
-						</div>
-					</div>
-
-					<div class="grid-tema1" id="portafolio">
-						<h4 class="section">Portafolio</h4>
-
-						<div class="grid-content1">
-
-							<div class="name">Página web (en construcción)</div>
-							<div class="grid-link">
-								<a href="https://franciscocastro54.github.io/francisco-castro/">Página web</a>
-							</div>
-
-							<div class="name">Sistema de análisis de datos de mineria</div>
-							<div class="grid-link">
-								<a href="https://gh-pages.d1ttcus0droxpy.amplifyapp.com/Circuito_Unitario">Proyecto
-									mineria</a>
-								<img class="qr" data-lazy="./img/qrMineria.png" alt="mineral proyect" />
-							</div>
-
-
-							<div class="name">Tecnologías usadas en diseño</div>
-							<div class="parrafo2">html, Bootstrap 5, Javascript, React, css y github</div>
-
-
-							<div class="name">Curriculum</div>
-							<div class="grid-link">
-
-								<a href="https://franciscocastro54.github.io/cvProyect/">Curriculum online</a>
-								<img class="qr" data-lazy="./img/qrCV.png" alt="curriculum" />
-
-							</div>
-
-
-							<div class="name">Código</div>
-							<div><a href="https://github.com/franciscocastro54/cvProyect">código fuente de
-									curriculum</a></div>
-
-							<div class="name">Tecnologías usadas en diseño</div>
-							<div class="parrafo2">html, css y github</div>
-						</div>
-					</div>
-
-					<div class="grid-tema1" id="Pasatiempos">
-						<h4 class="section">Pasatiempos e intereses</h4>
-
-						<div class="grid-content1">
-
-
-							<div class="name">Desarrollo de videojuegos</div>
-							<div></div>
-
-							<div class="name">Practicar Taekwondo</div>
-							<div></div>
-
-							<div class="name">Investigación autodidacta</div>
-							<div></div>
-
-						</div>
-					</div>
-
-				</article>
-			</section>
-			<!-- <button class="boton" id="btnCrearPdf">Descargar pdf</button> -->
-		</div>
-	</div>
-	<script src="js/vanilla-tilt.min.js"></script>
-	<script src="app.js"></script>
-	<script src="js/particles.min.js"></script>
-	<script src="js/background.js"></script>
-	<script src="js/kuteAnimation.js"></script>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <!-- <script src="./js/main.js"></script> -->
+    <script defer src="js/lazy-loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <title>francisco-castro</title>
+  </head>
+
+  <body>
+
+    <div class="hero" id="hero">
+      <a
+        href="#"
+        class="logo"
+        id="logo"
+        data-tilt
+        data-tilt-glare="true"
+        data-tilt-max-glare="0.5"
+        data-tilt-speed="400"
+        data-tilt-scale="1.1"
+        data-tilt-perspective="500"
+        data-tilt-max="10"
+        data-tilt-scale="1.1"
+      >
+        <img
+          data-lazy="./img/francisco-castro-logo-white.png"
+          alt=""
+          srcset=""
+        />
+        <p id="sub-1">Desarrollador frontend</p>
+        <p id="sub-2">Analista programador</p>
+      </a>
+    </div>
+
+    <nav id="menu">
+      <a href="#quiensoy">Quién soy</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#curriculum">Curriculum</a>
+      <span class="indicador" id="indicador"></span>
+    </nav>
+
+    <div class="secciones">
+      <div class="seccion" id="quiensoy">
+        <div
+          class="card"
+          data-tilt
+          data-tilt-glare="true"
+          data-tilt-max-glare="0.5"
+          data-tilt-speed="400"
+          data-tilt-scale="1.1"
+          data-tilt-perspective="500"
+          data-tilt-max="2"
+        >
+          <!-- <svg
+            id="visual"
+            viewBox="0 0 900 750"
+            width="900"
+            height="750"
+            xmlns="http://www.w3.org/2000/svg"
+            
+            version="1.1"
+          >
+            <g>
+              <path
+                id="blob1"
+                d="M0 211L21.5 192.3C43 173.7 86 136.3 128.8 124.5C171.7 112.7 214.3 126.3 257.2 142.2C300 158 343 176 385.8 177.3C428.7 178.7 471.3 163.3 514.2 149.3C557 135.3 600 122.7 642.8 120.7C685.7 118.7 728.3 127.3 771.2 143.2C814 159 857 182 878.5 193.5L900 205L900 0L878.5 0C857 0 814 0 771.2 0C728.3 0 685.7 0 642.8 0C600 0 557 0 514.2 0C471.3 0 428.7 0 385.8 0C343 0 300 0 257.2 0C214.3 0 171.7 0 128.8 0C86 0 43 0 21.5 0L0 0Z"
+                fill="#64ffda"
+                stroke-linecap="square"
+                stroke-linejoin="bevel"
+              ></path>
+            </g>
+
+            <g style="visibility: hidden">
+              <path
+                id="blob2"
+                d="M0 180L21.5 171.2C43 162.3 86 144.7 128.8 137.8C171.7 131 214.3 135 257.2 147C300 159 343 179 385.8 187.8C428.7 196.7 471.3 194.3 514.2 181.8C557 169.3 600 146.7 642.8 139C685.7 131.3 728.3 138.7 771.2 141C814 143.3 857 140.7 878.5 139.3L900 138L900 0L878.5 0C857 0 814 0 771.2 0C728.3 0 685.7 0 642.8 0C600 0 557 0 514.2 0C471.3 0 428.7 0 385.8 0C343 0 300 0 257.2 0C214.3 0 171.7 0 128.8 0C86 0 43 0 21.5 0L0 0Z"
+                fill="#64ffda"
+                stroke-linecap="square"
+                stroke-linejoin="bevel"
+              ></path>
+            </g>
+          </svg> -->
+          <div class="card-header">
+            <h1 class="title">Quién soy?</h1>
+          </div>
+          <!-- <img id="laptop-photo" data-lazy="img/rocks.jpg" alt="" /> -->
+          <p class="card-paragraph">
+            Soy un analista programador especializado en el desarrollo frontend
+            de aplicaciones de escritorio y web, además de instruirme de manera
+            autodidacta acerca de las nuevas tecnologías y tendencias que surgen
+            en la web, siempre busco nuevos desafíos y grupos de trabajo en los
+            que pueda crecer profesionalmente.
+          </p>
+        </div>
+      </div>
+
+      <div class="seccion" id="proyectos">
+        <div
+          class="card"
+          data-tilt
+          data-tilt-glare="true"
+          data-tilt-max-glare="0.5"
+          data-tilt-speed="400"
+          data-tilt-scale="1.1"
+          data-tilt-perspective="500"
+          data-tilt-max="2"
+          data-tilt-scale="1.1"
+        >
+          <!-- <svg
+            id="visual"
+            viewBox="0 0 900 750"
+            width="900"
+            height="750"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+          >
+            <g>
+              <path
+                id="blob3"
+                d="M0 211L21.5 192.3C43 173.7 86 136.3 128.8 124.5C171.7 112.7 214.3 126.3 257.2 142.2C300 158 343 176 385.8 177.3C428.7 178.7 471.3 163.3 514.2 149.3C557 135.3 600 122.7 642.8 120.7C685.7 118.7 728.3 127.3 771.2 143.2C814 159 857 182 878.5 193.5L900 205L900 0L878.5 0C857 0 814 0 771.2 0C728.3 0 685.7 0 642.8 0C600 0 557 0 514.2 0C471.3 0 428.7 0 385.8 0C343 0 300 0 257.2 0C214.3 0 171.7 0 128.8 0C86 0 43 0 21.5 0L0 0Z"
+                fill="#64ffda"
+                stroke-linecap="square"
+                stroke-linejoin="bevel"
+              ></path>
+            </g>
+
+            <g style="visibility: hidden">
+              <path
+                id="blob4"
+                d="M0 180L21.5 171.2C43 162.3 86 144.7 128.8 137.8C171.7 131 214.3 135 257.2 147C300 159 343 179 385.8 187.8C428.7 196.7 471.3 194.3 514.2 181.8C557 169.3 600 146.7 642.8 139C685.7 131.3 728.3 138.7 771.2 141C814 143.3 857 140.7 878.5 139.3L900 138L900 0L878.5 0C857 0 814 0 771.2 0C728.3 0 685.7 0 642.8 0C600 0 557 0 514.2 0C471.3 0 428.7 0 385.8 0C343 0 300 0 257.2 0C214.3 0 171.7 0 128.8 0C86 0 43 0 21.5 0L0 0Z"
+                fill="#64ffda"
+                stroke-linecap="square"
+                stroke-linejoin="bevel"
+              ></path>
+            </g>
+          </svg> -->
+          <div class="card-header">
+            <h1 class="title">Experiencia</h1>
+          </div>
+          <p class="card-paragraph">
+            He participado en el desarrollo de software web y de escritorio, 
+            en los cuales he estado a cargo de la gestión de requerimientos y
+            del desarrollo frontend. 
+          </p>
+
+         <p class="card-paragraph">
+          Experiencia de consumo de API's, principios SOLID, programación orientada a objetos, 
+          programación reactiva, programación funcional y multiples librerías.
+         </p> 
+          <p class="card-paragrah">
+            Constantemente me encuentro trabajando he instruyéndome en nuevas tecnologías,
+             creando soluciones intuitivas y eficientes.
+          </p>
+        </div>
+      </div>
+
+      <div class="seccion" id="habilidades">
+        <div
+          class="card"
+          data-tilt
+          data-tilt-glare="true"
+          data-tilt-max-glare="0.5"
+          data-tilt-speed="400"
+          data-tilt-scale="1.1"
+          data-tilt-perspective="500"
+          data-tilt-max="2"
+          data-tilt-scale="1.1"
+        >
+          <!-- <svg
+            id="visual"
+            viewBox="0 0 900 750"
+            width="900"
+            height="750"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+          >
+            <g>
+              <path
+                id="blob5"
+                d="M0 211L21.5 192.3C43 173.7 86 136.3 128.8 124.5C171.7 112.7 214.3 126.3 257.2 142.2C300 158 343 176 385.8 177.3C428.7 178.7 471.3 163.3 514.2 149.3C557 135.3 600 122.7 642.8 120.7C685.7 118.7 728.3 127.3 771.2 143.2C814 159 857 182 878.5 193.5L900 205L900 0L878.5 0C857 0 814 0 771.2 0C728.3 0 685.7 0 642.8 0C600 0 557 0 514.2 0C471.3 0 428.7 0 385.8 0C343 0 300 0 257.2 0C214.3 0 171.7 0 128.8 0C86 0 43 0 21.5 0L0 0Z"
+                fill="#64ffda"
+                stroke-linecap="square"
+                stroke-linejoin="bevel"
+              ></path>
+            </g>
+
+            <g style="visibility: hidden">
+              <path
+                id="blob6"
+                d="M0 180L21.5 171.2C43 162.3 86 144.7 128.8 137.8C171.7 131 214.3 135 257.2 147C300 159 343 179 385.8 187.8C428.7 196.7 471.3 194.3 514.2 181.8C557 169.3 600 146.7 642.8 139C685.7 131.3 728.3 138.7 771.2 141C814 143.3 857 140.7 878.5 139.3L900 138L900 0L878.5 0C857 0 814 0 771.2 0C728.3 0 685.7 0 642.8 0C600 0 557 0 514.2 0C471.3 0 428.7 0 385.8 0C343 0 300 0 257.2 0C214.3 0 171.7 0 128.8 0C86 0 43 0 21.5 0L0 0Z"
+                fill="#64ffda"
+                stroke-linecap="square"
+                stroke-linejoin="bevel"
+              ></path>
+            </g>
+          </svg> -->
+
+          <div class="card-header">
+            <h1 class="title">Habilidades</h1>
+          </div>
+          <p class="card-paragraph">
+            Amplio conocimiento de metodologías ágiles, experiencia dictando
+            clases, disposición a recibir criticas constructivas así como a
+            aportar con nuevas ideas orientadas en la optimización del trabajo.
+            A continuación se listaran algunas de las tecnologías que domino.
+          </p>
+
+          <ul class="list">
+            <li id="html5">
+              <h3>HTML5</h3>
+              <div class="logo-container">
+                <img data-lazy="img/logos/html-logo.png" alt="" srcset="" />
+              </div>
+            </li>
+
+            <li id="javascript">
+              <h3>javaScript</h3>
+              <div class="logo-container">
+                <img
+                  data-lazy="img/logos/javascript-logo.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </li>
+
+            <li id="css">
+              <h3>css</h3>
+              <div class="logo-container">
+                <img data-lazy="img/logos/css-logo.png" alt="" srcset="" />
+              </div>
+            </li>
+
+            <li id="bootstrap">
+              <h3>Bootstrap</h3>
+              <div class="logo-container">
+                <img
+                  data-lazy="img/logos/bootstrap-logo.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </li>
+
+            <li id="java">
+              <h3>mantineJS</h3>
+              <div class="logo-container">
+                <img
+                  data-lazy="img/logos/mantineJS.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </li>
+
+            <li id="java">
+              <h3>neutralino</h3>
+              <div class="logo-container">
+                <img
+                  data-lazy="img/logos/neutralino-logo.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </li>
+
+            <li id="java">
+              <h3>Linux</h3>
+              <div class="logo-container">
+                <img
+                  data-lazy="img/logos/linux.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </li>
+
+            <li id="github">
+              <h3>Github</h3>
+              <div class="logo-container">
+                <img data-lazy="img/logos/github.png" alt="" srcset="" />
+              </div>
+            </li>
+
+            <li id="java">
+              <h3>Java</h3>
+              <div class="logo-container">
+                <img data-lazy="img/logos/java-logo.png" alt="" srcset="" />
+              </div>
+            </li>
+
+            <li id="nodejs">
+              <h3>NodeJS</h3>
+              <div class="logo-container">
+                <img data-lazy="img/logos/node-logo.png" alt="" srcset="" />
+              </div>
+            </li>
+
+            <li id="npm">
+              <h3>npm</h3>
+              <div class="logo-container">
+                <img data-lazy="img/logos/npm-logo.png" alt="" srcset="" />
+              </div>
+            </li>
+
+            <li id="react">
+              <h3>react</h3>
+              <div class="logo-container">
+                <img data-lazy="img/logos/react-logo.png" alt="" srcset="" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="seccion">
+      <div
+        class="card"
+        id="contacto"
+        data-tilt
+        data-tilt-glare="true"
+        data-tilt-max-glare="0.5"
+        data-tilt-speed="400"
+        data-tilt-scale="1.1"
+        data-tilt-perspective="500"
+        data-tilt-max="2"
+        data-tilt-scale="30"
+      >
+        <div class="card-header">
+          <h1 class="title">Contacto</h1>
+        </div>
+        
+
+        <div class="table-container">
+          <table>
+            <tr>
+              <td class="table-icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-mail"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="#64ffda"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                  <polyline points="3 7 12 13 21 7"></polyline>
+                </svg>
+              </td>
+              <td class="table-content">
+                <a
+                  href="mailto:francisco.castro.init@gmail.com"
+                  title="francisco.castro.init@gmail.com"
+                  >francisco.castro.init@gmail.com</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="table-icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-linkedin"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="#64ffda"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                  <line x1="8" y1="11" x2="8" y2="16"></line>
+                  <line x1="8" y1="8" x2="8" y2="8.01"></line>
+                  <line x1="12" y1="16" x2="12" y2="11"></line>
+                  <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                </svg>
+              </td>
+              <td class="table-content">
+                <a
+                  href="https://www.linkedin.com/in/francisco-castro-zuleta/"
+                  title="https://www.linkedin.com/in/francisco-castro-zuleta/"
+                  >https://www.linkedin.com/in/francisco-castro-zuleta/</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="table-icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-github"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="#64ffda"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                  ></path>
+                </svg>
+              </td>
+              <td class="table-content">
+                <a
+                  href="https://github.com/franciscocastro54"
+                  title="https://github.com/franciscocastro54"
+                  >https://github.com/franciscocastro54</a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    </div>
+      <div class="seccion" id="curriculum">
+        <a class="boton" href="pdf/cv_FranciscoCastro_11-08-2022.pdf" id="downloadPDF" download>Descargar curriculum</a>
+
+        <iframe src="pdf/cv_FranciscoCastro_11-08-2022.pdf" width="100%" height="500px"></iframe>
+      </div>
+    </div>
+    <script src="js/vanilla-tilt.min.js"></script>
+    <script src="app.js"></script>
+    <script src="js/createPDF.js"></script>
+    <script src="js/kuteAnimation.js"></script>
+  </body>
 </html>
