@@ -29,6 +29,8 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100vw;
+
 }
 
 * {
@@ -89,6 +91,7 @@ nav {
   top: 0;
   overflow: hidden;
   z-index: 100;
+  width: 100%;
 }
 
 nav a {
@@ -171,62 +174,86 @@ nav .indicador {
 .card {
   transform-style: preserve-3d;
   max-width: 50vw;
-  min-width: 600px;
+  min-width: 200px;
+
 }
 
-.card > img {
+/* .card > img {
   align-self: center;
 
   height: 200%;
-  vertical-align: top;
+  vertical-align: top; */
   /* margin-top: 10rem; */
   /* margin-bottom: 2rem; */
   /* transform: translateZ(100px) translateX(80%) translateY(-10px); */
-}
+/* } */
 
 .seccion .list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
-  min-width: 500px;
+  max-width: 600;
+  min-width: 100px;
+  /* margin-right: 1.5rem; */
 
   /* transform: translateZ(110px) translateX(30px) translateY(-10px); */
 }
 
 .list li {
   margin-bottom: 1rem;
+  margin-right: 1rem;
   text-align: center;
-  width: 150px;
+  max-width: 100px;
+  min-width: 50px;
+}
+
+.list{
+  text-align: center;
+  margin-left: 0;
 }
 
 .seccion ul h3 {
   font-weight: bold;
-  font-size: 0.7rem;
-  color: var(--blue-1);
+  font-size: 0.6rem;
+  color: var(--blue-2);
   padding: 0.5rem 0 0.5rem 0;
-  background: var(--blue-2);
+  background: var(--transparent-dark-blue);
+  padding-top: 25px;
+  z-index: 100;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+
 }
 
 .logo-container {
 }
 
+.seccion ul.list li h3{
+  background-color: transparent;
+  color: transparent;
+} 
+
+.seccion ul.list li:hover h3{
+  background-color: var(--transparent-dark-blue);
+  color: white;
+  transition: 0.5s ease-in-out all;
+} 
+
 .logo-container img {
-  width: 100px;
+  max-width: 50px;
+  
 }
 
-@media screen and (max-width: 800px) {
-  nav a {
-    font-size: 14px;
-    padding: 5px;
-  }
+.seccion ul.list li:hover img{ 
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  transition: 0.5s ease-in-out all;
+
 }
 
-@media screen and (max-width: 450px) {
-  nav a {
-    font-size: 12px;
-  }
-}
+
 
 @keyframes example {
   from {
@@ -596,11 +623,59 @@ footer > .name2 {
 
 .table-container {
   margin-top: 2rem;
+
+}
+
+.table-container tr{
+  padding-bottom: 2rem;
+}
+
+.table-content{
+  padding-left: 1rem;
 }
 
 .table-content a {
   color: var(--green);
   font-size: 1.2rem;
   padding-top: 1rem;
-  padding-left: 1rem;
+}
+
+
+@media screen and (max-width: 800px) {
+  nav a {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .table-content a{
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav a {
+    font-size: 0.7rem;
+  }
+
+  .card-header .title{
+    font-size: 1rem;
+  }
+  
+  .card-paragraph{
+    font-size: 0.7rem;
+  }
+
+  .table-content a{
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav a {
+    font-size: 0.5rem;
+  }
+
+  .list li{
+    margin-right: 0;
+  }
 }
