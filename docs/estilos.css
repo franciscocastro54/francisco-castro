@@ -681,7 +681,24 @@ footer > .name2 {
 @media screen and (max-width: 500px) {
 
   .table-content a{
+    font-size: 0.8rem;
+  }
+
+  .seccion{
+    width: 100vw;
+  }
+
+  .card-paragraph{
+    width: 80vw;
     font-size: 0.5rem;
+  }
+
+  /* .card-header{
+    width: 50vw;
+  } */
+
+  .secciones div.seccion div.card{
+    min-width: 100vw;
   }
 }
 
@@ -691,6 +708,6 @@ footer > .name2 {
   }
 
   .list li{
-    margin-right: 0;
+    margin-right: 2rem;
   }
 }
