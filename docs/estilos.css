@@ -129,8 +129,7 @@ nav .indicador {
   max-width: 800px;
   width: 90%;
   margin: auto;
-
-  padding-top: 120px;
+  margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,7 +138,6 @@ nav .indicador {
 
 .seccion .card {
   background: var(--dark-blue);
-  height: 90%;
   padding: 40px;
   border-radius: 2px;
   box-shadow: rgba(4, 235, 243, 0.2) 0px 8px 15px;
@@ -191,7 +189,7 @@ nav .indicador {
 .seccion .list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   max-width: 600;
   min-width: 100px;
@@ -250,6 +248,7 @@ nav .indicador {
   filter: blur(2px);
   -webkit-filter: blur(2px);
   transition: 0.5s ease-in-out all;
+  width: 44px;
 
 }
 
@@ -652,6 +651,14 @@ footer > .name2 {
   }
 }
 
+@media screen and (max-width: 700px) {
+  
+
+  tr .table-content{
+    width: 400px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   nav a {
     font-size: 0.7rem;
@@ -665,14 +672,22 @@ footer > .name2 {
     font-size: 0.7rem;
   }
 
+
   .table-content a{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .table-content a{
+    font-size: 0.5rem;
   }
 }
 
 @media screen and (max-width: 400px) {
   nav a {
-    font-size: 0.5rem;
+    font-size: 0.3rem;
   }
 
   .list li{
