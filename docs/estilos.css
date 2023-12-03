@@ -143,10 +143,11 @@ nav .indicador {
 }
 
 .seccion {
-  min-height: 100vh;
+  min-height: 50vh;
   max-width: 800px;
   width: 90%;
   margin: auto;
+  padding-bottom: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,7 +156,7 @@ nav .indicador {
 
 .seccion .card {
   background: var(--dark-blue);
-  padding: 40px;
+  padding: 20px;
   border-radius: 2px;
   box-shadow: rgba(4, 235, 243, 0.2) 0px 8px 15px;
   overflow: hidden;
@@ -596,7 +597,7 @@ footer>.name2 {
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-
+  padding-top: 5vh;
   /* Aplica el efecto de desenfoque */
 }
 
@@ -616,11 +617,12 @@ footer>.name2 {
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-  padding-top: 5rem;
+  padding-top: 25rem;
 }
 
 .iframe{
   padding-top: 7rem;
+  height: 100vh;
 }
 
 /** For mobile devices **/
