@@ -102,7 +102,7 @@ a {
 
 nav {
   background: var(--transparent-dark-blue);
-  height: 80px;
+  height: 57px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: flex;
   position: sticky;
