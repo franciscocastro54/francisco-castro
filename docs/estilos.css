@@ -611,7 +611,7 @@ footer>.name2 {
 }
 
 .download-document{
-  background-image: url(img/contact-us-2993000_1920.jpg);
+  background-image: url(img/universe-2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -619,6 +619,9 @@ footer>.name2 {
   padding-top: 5rem;
 }
 
+.iframe{
+  padding-top: 7rem;
+}
 
 /** For mobile devices **/
 @media (max-width: 767px) {
@@ -692,6 +695,8 @@ footer>.name2 {
   font-size: 1.2rem;
   padding-top: 1rem;
 }
+
+
 
 
 @media screen and (max-width: 800px) {
