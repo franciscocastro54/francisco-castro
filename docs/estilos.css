@@ -41,11 +41,31 @@ html {
 
 body {
   /* background: var(--dark-blue); */
-  background-image: linear-gradient(to right,
+  /*background-image: linear-gradient(to right,
       var(--blue-1) 0%,
-      var(--blue-2) 0%);
+      var(--blue-2) 0%);*/
   font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
+  
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  background-image: url(img/multiverse-man.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+
+  /* Aplica el efecto de desenfoque */
+  filter: blur(5px);
 }
 
 ul {
@@ -127,7 +147,6 @@ nav .indicador {
   max-width: 800px;
   width: 90%;
   margin: auto;
-  margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -223,9 +242,7 @@ nav .indicador {
 
 }
 
-.logo-container {
-  
-}
+.logo-container {}
 
 .seccion ul.list li h3 {
   background-color: transparent;
@@ -570,6 +587,38 @@ footer>.name2 {
   color: var(--text-color1);
   border: var(--dark-blue) 1px solid;
 }
+
+.secciones{
+  
+
+  background-image: url(img/vision-8386199_1920.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+
+  /* Aplica el efecto de desenfoque */
+}
+
+.download-button{
+  
+  margin: auto;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-document{
+  background-image: url(img/contact-us-2993000_1920.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 5rem;
+}
+
 
 /** For mobile devices **/
 @media (max-width: 767px) {
