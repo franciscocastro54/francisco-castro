@@ -92,7 +92,8 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 80px);
+  height: 90vh;
+  width: 100vw;
 }
 
 .hero img {
@@ -102,7 +103,9 @@ a {
 
 nav {
   background: var(--transparent-dark-blue);
-  height: 57px;
+  height: 8vh;
+  margin: 0;
+  padding: 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: flex;
   position: sticky;
@@ -123,6 +126,7 @@ nav a {
   color: var(--green);
   transition: 0.2s ease-in-out all;
   backdrop-filter: blur(5px);
+  position: sticky;
 }
 
 nav a:hover {
@@ -141,6 +145,7 @@ nav .indicador {
 
   /* transform: translate(-500px); */
 }
+
 
 .seccion {
   min-height: 50vh;
@@ -273,6 +278,8 @@ nav .indicador {
   width: 70px;
 
 }
+
+
 
 @keyframes example {
   from {
