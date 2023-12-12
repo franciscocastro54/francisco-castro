@@ -17,6 +17,7 @@
   --blue-2: #f0f7da;
   --transparent-dark-blue: #1f192f96;
   --green: #b5e8c3;
+  --transparent-green: #b5e8c3b6; 
 
   /* --text-color1: #73a3d0; */
   --text-color2: rgba(85, 83, 83, 0.755);
@@ -163,14 +164,56 @@ nav .indicador {
   background: var(--dark-blue);
   padding: 20px;
   border-radius: 2px;
-  box-shadow: rgba(4, 235, 243, 0.2) 0px 8px 15px;
+  box-shadow: rgba(255, 255, 255, 0.027) 0px 8px 15px;
   overflow: hidden;
   align-items: center;
 }
 
+.seccion .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  background-image: url(img/vr/cubes/alien_world.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+
+  /* Aplica el efecto de desenfoque */
+
+  filter: blur(1px);
+}
+
+.seccion .card::before:hover {
+
+  /* Aplica el efecto de desenfoque */
+
+}
+
+.seccion .card-paragraph{
+  color: var(--dark-blue);
+  background: var(--transparent-dark-blue);
+  color: var(--green);
+  padding: 1rem;
+}
+
+.seccion .card:hover{
+  font-size: 1.3rem;
+}
+
+.seccion .card-paragraph:hover{
+  font-size: 1.5rem;
+}
+
+
 .card-header {
   padding: 1rem;
-  background: var(--green);
+  background: var(--transparent-green);
 }
 
 .card>.title {
@@ -248,7 +291,9 @@ nav .indicador {
 
 }
 
-.logo-container {}
+.logo-container {
+
+}
 
 .seccion ul.list li h3 {
   background-color: transparent;
@@ -611,7 +656,7 @@ footer>.name2 {
 .download-button{
   
   margin: auto;
-  margin-bottom: 5rem;
+  margin-bottom: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -628,8 +673,20 @@ footer>.name2 {
 }
 
 .iframe{
-  padding-top: 7rem;
+  padding-top: 0;
   height: 100vh;
+}
+
+.card-picture{
+  width: 46vw;
+}
+
+.table-icon-container{
+  background: var(--transparent-dark-blue);
+}
+
+.table-content{
+  background: var(--transparent-dark-blue);
 }
 
 /** For mobile devices **/
