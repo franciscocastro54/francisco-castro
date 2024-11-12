@@ -23,8 +23,8 @@ const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 if (isMobile) {
     // Manejo de inclinación con giroscopio en dispositivos móviles
     window.addEventListener("deviceorientation", (event) => {
-        const tiltX = event.gamma / 10;  // Inclinar horizontalmente
-        const tiltY = event.beta / 10;   // Inclinar verticalmente
+        const tiltX = event.gamma * 10;  // Inclinar horizontalmente
+        const tiltY = event.beta * 10;   // Inclinar verticalmente
         updateTilt(tiltX, tiltY);
     });
 } else {
