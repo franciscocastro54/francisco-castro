@@ -8,14 +8,15 @@ themeToggle.addEventListener("change", () => {
 });
 
 
-// Referencia al elemento del header
-const header = document.getElementById("move");
-;
+// Selecciona todos los elementos con la clase "tilt"
+const tiltElements = document.querySelectorAll(".tilt");
 
-// Función para actualizar la inclinación del header
+// Función para actualizar la inclinación de cada elemento con clase "tilt"
 function updateTilt(x, y) {
-    header.style.transform = `rotateX(${y}deg) rotateY(${x}deg)`;
-}
+    tiltElements.forEach((element) => {
+        element.style.transform = `rotateX(${y}deg) rotateY(${x}deg)`;
+    });
+}      
 
 // Detectar si es un dispositivo móvil
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
