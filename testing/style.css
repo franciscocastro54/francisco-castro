@@ -49,6 +49,11 @@ body {
   line-height: 1.6;
 }
 
+img.img-1{
+  width: 10vw;
+
+}
+
 header {
   text-align: center;
   padding: 1.5rem;

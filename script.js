@@ -9,10 +9,12 @@ themeToggle.addEventListener("change", () => {
 
 
 // Selecciona todos los elementos con la clase "tilt"
-const tiltElements = document.querySelectorAll(".tilt");
+
 
 // Función para actualizar la inclinación de cada elemento con clase "tilt"
-function updateTilt(x, y) {
+function updateTilt(x, y, NameSelectorQuery) {
+    const tiltElements = document.querySelectorAll(NameSelectorQuery);
+
     tiltElements.forEach((element) => {
         element.style.transform = `rotateX(${y}deg) rotateY(${x}deg)`;
     });
@@ -26,17 +28,17 @@ if (isMobile) {
     window.addEventListener("deviceorientation", (event) => {
         const tiltX = event.gamma / 8000;  // Inclinar horizontalmente
         const tiltY = event.beta / 8000;    // Inclinar verticalmente
-        updateTilt(tiltX, tiltY);
+        updateTilt(tiltX, tiltY, ".tilt");
     });
 } else {
     // Manejo de inclinación con mouse en escritorio
     window.addEventListener("mousemove", (event) => {
-        const centerX = window.innerWidth / 10;
-        const centerY = window.innerHeight /10;
+        const centerX = window.innerWidth ;
+        const centerY = window.innerHeight ;
 
         // Calcular inclinación basada en la posición del mouse
-        const tiltX = ((event.clientX - centerX) / centerX) * 10; // Multiplicador para ajustar inclinación
-        const tiltY = ((event.clientY - centerY) / centerY) * -10; // Invertir para inclinar hacia arriba/abajo
-        updateTilt(tiltX, tiltY);
+        const tiltX = ((event.clientX - centerX) / centerX) * -40; // Multiplicador para ajustar inclinación
+        const tiltY = ((event.clientY - centerY) / centerY) * -40; // Invertir para inclinar hacia arriba/abajo
+        updateTilt(tiltX, tiltY, ".tilt" );
     });
 }

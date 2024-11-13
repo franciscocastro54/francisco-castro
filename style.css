@@ -114,6 +114,14 @@ input:checked + .slider:before {
   font-size: 0.9rem;
 }
 
+.img-1{
+  width: 10vw;
+}
+
+.imageContainer{
+  text-align: center;
+}
+
 section {
   max-width: 800px;
   margin: 2rem auto;
@@ -157,17 +165,17 @@ section ul li::before {
   left: 0;
 }
 
-.contact p {
+section p {
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
 
-.contact a {
+section a {
   color: var(--text-color);
   text-decoration: none;
 }
 
-.contact a:hover {
+section a:hover {
   text-decoration: underline;
 }
 
