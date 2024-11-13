@@ -116,7 +116,7 @@ input:checked + .slider:before {
 }
 
 .img-1{
-  width: 10vw;
+  width: 30vw;
 }
 
 .image-2{
@@ -126,6 +126,7 @@ input:checked + .slider:before {
 
 .imageContainer{
   text-align: center;
+  margin-top: 2rem;
 }
 
 section {
@@ -140,6 +141,7 @@ section {
 section h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  margin-top: 2rem;
   color: var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
   padding-bottom: 0.5rem;
