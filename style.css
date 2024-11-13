@@ -21,11 +21,11 @@
 .light-theme {
   --background-color: #f4f4f9;
   --section-background: #ffffff;
-  --text-color: #60acbe;
+  --text-color: #2589ec;
   --header-color: #2b6ca8;
-  --subtitle-color: #2f4472;
+  --subtitle-color: #2589ec;
   --title-color: #d6d6d6;
-  --accent-color: #d7d7ee;
+  --accent-color: #5a5ae0;
 }
 
 /* Aplicación de Variables */
@@ -64,7 +64,7 @@ header h1 {
 
 header p {
   font-size: 1.2rem;
-  color: var(--accent-color);
+  color: var(--title-color);
 }
 
 /* Estilos del Switch */
@@ -96,7 +96,7 @@ header p {
   left: 2px;
   width: 20px;
   height: 20px;
-  background-color: var(--text-color);
+  background-color: var(--title-color);
   border-radius: 50%;
   transition: transform 0.3s;
 }
@@ -110,12 +110,16 @@ input:checked + .slider:before {
 }
 
 .switch-label {
-  color: var(--text-color);
+  color: var(--title-color);
   font-size: 0.9rem;
 }
 
 .img-1{
   width: 10vw;
+}
+
+.image-2{
+  width: 40vw;
 }
 
 .imageContainer{
