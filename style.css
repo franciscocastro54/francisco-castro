@@ -33,6 +33,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.6;
+  width: 100vw;
 }
 
 header {
@@ -120,6 +121,7 @@ input:checked + .slider:before {
 
 .image-2{
   width: 40vw;
+  margin: 0;
 }
 
 .imageContainer{
