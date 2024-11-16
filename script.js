@@ -33,8 +33,8 @@ if (isMobile) {
 } else {
     // Manejo de inclinación con mouse en escritorio
     window.addEventListener("mousemove", (event) => {
-        const centerX = window.innerWidth ;
-        const centerY = window.innerHeight ;
+        const centerX = window.innerWidth/2;
+        const centerY = window.innerHeight/2 ;
 
         // Calcular inclinación basada en la posición del mouse
         const tiltX = ((event.clientX - centerX) / centerX) * -40; // Multiplicador para ajustar inclinación
