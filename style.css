@@ -782,3 +782,17 @@ in other input type*/
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+a {
+  display: inline-block; /* Para respetar las dimensiones del elemento */
+  max-width: 50vw; /* Máximo ancho del 25% de la ventana */
+  overflow: hidden; /* Oculta el contenido que excede el tamaño del elemento */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es muy largo */
+  white-space: nowrap; /* Evita que el texto se envuelva */
+  padding: 10px; /* Espaciado interno para hacerlo más legible */
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  color: #000; /* Color del texto */
+  border-radius: 5px; /* Esquinas redondeadas */
+  transition: background-color 0.3s ease; /* Transición suave para hover */
+  margin-bottom: -16px;
+}
